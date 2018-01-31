@@ -1,7 +1,7 @@
-@aniDistance: 20px;
+@aniDistance: 80px;
 
 html, body {
-    position:relative;
+    position: relative;
     overflow: hidden;
     -webkit-overflow-scrolling: unset;
 }
@@ -12,17 +12,18 @@ html, body {
 }
 
 .s9-loc {
-    position: relative;
+    position: absolute;
     animation-name: content-in;
     animation-timing-function: ease;
     animation-duration: .5s;
+    animation-fill-mode: both;
 
     &.out {
         animation-name: content-out;
         animation-timing-function: ease-out;
         animation-duration: .3s;
-        // display: none;
-        // animation-play-state: paused;
+        animation-fill-mode: both;
+        transition: visibility .1s ease .5s;
     }
 }
 
@@ -119,11 +120,11 @@ html, body {
 }
 
 @keyframes content-in {
-    from {left: @aniDistance; opacity: 0;}
-    to {left: 0px; opacity: 1;}
+    from {transform: translateX(@aniDistance); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
 }
 
 @keyframes content-out {
-    from {left: 0px; opacity: 1;}
-    to {left: @aniDistance; opacity: 0;}
+    from {transform: translateX(0); opacity: 1; visibility: visible;}
+    to {transform: translateX(@aniDistance); opacity: 0; visibility: hidden;}
 }
