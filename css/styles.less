@@ -1,0 +1,129 @@
+@aniDistance: 20px;
+
+html, body {
+    position:relative;
+    overflow: hidden;
+    -webkit-overflow-scrolling: unset;
+}
+
+.s9-menu  {
+    margin-top: -8%;
+    margin-left: 7%;
+}
+
+.s9-loc {
+    position: relative;
+    animation-name: content-in;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+
+    &.out {
+        animation-name: content-out;
+        animation-timing-function: ease-out;
+        animation-duration: .3s;
+        // display: none;
+        // animation-play-state: paused;
+    }
+}
+
+.uk-card-secondary {
+    background: rgba(30, 29, 28, 0.8);
+    transition: background .3s;
+}
+
+#content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 18%;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 32, 32, 0.75);
+
+    & > div {
+        text-align: justify;
+        text-justify: inter-ideograph;
+        margin: 5% 7%;
+        padding-right: 15px;
+        width: calc(100% - 35%);
+        height: calc(100% - 20%);
+        overflow: auto;
+    }
+
+    transition: left .5s;
+}
+
+#offcanvas-slide {
+    .uk-offcanvas-bar {
+        background: rgba(26, 21, 21, 0.96);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(26, 21, 21, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+    background-color: rgba(19, 17, 17, 0.65);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(26, 21, 21, .05), inset 1px 1px 0px rgba(26, 21, 21, .05);
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+
+@media screen {
+    @media (max-width: 640px) {
+        #content {
+            padding: 5px;
+
+            & > div {
+                width: calc(100% - 1%);
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        #content {
+            left: 0;
+    
+            & > div {
+                margin: 5% 2%;
+                width: calc(100% - 8%);
+            }
+        }
+    
+        .s9-menu {
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-height: 480px) {
+        #content {
+            & > div {
+                margin: 10px;
+                height: calc(100% - 35px);
+            }
+        }
+    }
+}
+
+@keyframes content-in {
+    from {left: @aniDistance; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+}
+
+@keyframes content-out {
+    from {left: 0px; opacity: 1;}
+    to {left: @aniDistance; opacity: 0;}
+}
