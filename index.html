@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="Full Stack,Programmer,Developer,Node,JavaScript">
+    <meta name="keywords" content="Programmer,Developer,Node,JavaScript,golang">
     <meta name="author" content="Duye Chen">
     <meta property="og:title" content="Duye Chen" >
-    <meta property="og:url" content="https://single9.github.io/">
+    <meta property="og:url" content="https://duye.single9.net/">
     <meta property="og:image" content="https://i.imgur.com/puUPCYx.jpg">
     <meta property="og:type" content="website"> 
     <meta property="og:image:alt" content="https://i.imgur.com/puUPCYx.jpg">
@@ -30,11 +30,11 @@
     <h2 class="uk-heading-bullet"><span class="s9-header" s-pos="about">關於我</span></h2>
     <p class="uk-text-meta">全端開發者 Full Stack Developer.</p>
     <p>Duye，獨夜，台灣人。Duye 是獨夜這個名稱的直接音譯。</p>
-    <p>喜歡研究各種新穎有趣的科技知識，並將研究所學撰寫成教學文章。擁有一個部落格 Single.9。</p>
+    <p>喜歡研究各種新穎有趣的科技知識，並將研究所學撰寫成教學文章。擁有一個部落格 <a href="https://single9.net">Single.9。</a></p>
     <p>初期著力於 PHP 網站開發，曾使用過 CodeIgniter、Smarty 等框架。後轉入嵌入式系統開發與研究，曾嘗試與使用過的微控制器有 8051、AVR、Microchip、mbed、TI MSP430G2等，並於研究所時期開發貢獻過 nRF24 無線收發模組的函式庫，提供一種新的方式使 Beaglebone Black 可以透過 Bone Script 操作 nRF24 無線模組。同時於此時期研究 Node.js 技術，並應用於多項專案。</p>
-    <p>目前主要使用 Node.js 開發網路應用程式、伺服器程式、監控系統等。</p>
+    <p>目前主要使用 Node.js、Golang 等程式語言開發網路應用程式、伺服器程式、監控系統以及系統架構規劃、設計。</p>
 
-    <a href="http://single9.net" target="_blank" class="uk-icon-button" uk-icon="icon: home"></a>
+    <a href="https://single9.net" target="_blank" class="uk-icon-button" uk-icon="icon: home"></a>
     <a href="https://facebook.com/single9" target="_blank" class="uk-icon-button" uk-icon="icon: facebook"></a>
     <a href="https://www.instagram.com/duye.chen/" target="_blank" class="uk-icon-button" uk-icon="icon: instagram"></a>
     <a href="https://www.youtube.com/channel/UCWVrPGHvznc-FVCt6kxA1Ig" target="_blank" class="uk-icon-button" uk-icon="icon: youtube"></a>
@@ -50,6 +50,8 @@
     <ul class="uk-list uk-list-bullet">
                 <li><strong>JavaScript</strong></li>
                 <li><strong>HTML, CSS (Less)</strong></li>
+                <li>Golang</li>
+                <li>Python</li>
                 <li>C/C++</li>
     </ul>
 </div>
@@ -61,10 +63,7 @@
                 <li><strong>Node.js</strong></li>
                 <li><strong>Vue.js</strong></li>
                 <li>Vanilla.js</li>
-                <li>UIKit</li>
                 <li>Bootstrap</li>
-                <li>Sematic UI</li>
-                <li>GraphQL</li>
     </ul>
 </div>
 
@@ -72,7 +71,8 @@
     <h3>資料庫</h3>
 
     <ul class="uk-list uk-list-bullet">
-                <li>PostgreSQL</li>
+                <li><strong>PostgreSQL</strong></li>
+                <li>Redis</li>
                 <li>MariaDB</li>
                 <li>MongoDB</li>
     </ul>
@@ -83,10 +83,11 @@
 
     <ul class="uk-list uk-list-bullet">
                 <li><strong>Docker</strong></li>
+                <li><strong>Tensorflow</strong></li>
+                <li>Kubernetes</li>
                 <li>Linux</li>
-                <li>macOS</li>
                 <li>AWS</li>
-                <li>Webpack</li>
+                <li>GCP</li>
                 <li>Arduino</li>
                 <li>mbed</li>
     </ul>
@@ -102,14 +103,29 @@
         <div>
             <h3>工作經歷</h3>
 
-            <strong>2018/06 ~ present</strong>
+            <strong>2020/09 ~ present</strong>
 
-            <p>於 <a href="https://webduino.io">慶奇科技(Webduino)</a> 擔任 <strong>後端工程師</strong></p>
-            <p>負責後端伺服器開發、設計、維護等。</p>
+            <p>於 <a href="https://viewsonic.com" target="_blank">ViewSonic</a> 擔任 <strong>後端工程師</strong></p>
+            <p>負責 <a href="https://myviewboard.com/" target="_blank">MyViewboard</a> 後端伺服器開發、設計、維護等。</p>
+
+            <strong>2018/06 ~ 2020/08</strong>
+
+            <p>於 <a href="https://webduino.io" target="_blank">慶奇科技(Webduino)</a> 擔任 <strong>後端工程師</strong></p>
+            <p>使用 GCP + Rancher 2(k8s) 建立公司現役(2020/08)主要服務 Webduino[1][2] 之伺服器架構以及使用 Portainer.io 管理邊際服務，使用 GitLab CI/CD 建置內部自動測試與部署環境。</p>
+
+            <p>開發使用者面向的長期運作後端服務系統[3]、開發機器學習(MobileNet V1、V2)後端 API 服務系統[4]、開發物件辨識(Mask RCNN)後端 API 伺服器系統[5]、影像辨識(MobileNet)服務整合、影像辨識模型合併、Tensorflow 模型與 Tensorflow.js 模型轉換後端 API 伺服器系統。</p>
+            
+            <ul class="uk-list">
+                <li>[1] Webduino <a href="https://webduino.io" target="_blank">https://webduino.io</a></li>
+                <li>[2] Webduino Cloud <a href="https://cloud.webduino.io" target="_blank">https://cloud.webduino.io</a></li>
+                <li>[3] Webduino 雲端部署 <a href="https://bit.ly/2XCLdiO" target="_blank">https://bit.ly/2XCLdiO</a></li>
+                <li>[4] Webduino 影像分類系統 <a href="https://bit.ly/2ZPUEhB" target="_blank">https://bit.ly/2ZPUEhB</a></li>
+                <li>[5] 桃園農業改良場 AI 辨識服務 <a href="https://bit.ly/2XT8sVC" target="_blank">https://bit.ly/2XT8sVC</a></li>
+            </ul>
 
             <strong>2016/03 ~ 2018/01</strong>
 
-            <p>於 某網路系統有限公司 擔任 後端工程師</p>
+            <p>於 預秀網路系統有限公司 擔任 後端工程師</p>
             <p>負責使用AWS規劃伺服器架構。使用 Node.js 與 WebSocket 開發<span class="uk-text-bold"><u>半自動</u></span>伺服器監控系統、開發與主導公司所用之後端伺服器系統、Restful API 設計與開發、前端網頁程式設計。於工作期間使用 Vue.js 完成監控系統網頁介面。</p>
         </div>
     </div>
@@ -196,6 +212,60 @@
     <h2 class="uk-heading-bullet"><span>專案作品</span></h2>
     
     <div class="uk-child-width-1-1@l uk-grid-small" uk-grid>
+                    <a href="https://github.com/single9/node-grpc-graphql-server" target="_blank" class="uk-link-reset">
+        <div class="uk-card uk-card-secondary uk-card-hover uk-grid-collapse uk-child-width-1-3@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="https://i.imgur.com/hCCE1rZ.png" alt="" uk-cover>
+                <canvas width="300" height="200"></canvas>
+            </div>
+            <div class="uk-width-2-3@s">
+                <div class="uk-card-body">
+                    <div class="uk-card-badge"><span uk-icon="link"></span></div>
+                    <h3 class="uk-card-title">
+                        gRPC GraphQL Server
+                    </h3>
+                    <p>Generates a GraphQL schema from gRPC Protobuf and creates the server</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
+                    <a href="https://github.com/single9/api-tester" target="_blank" class="uk-link-reset">
+        <div class="uk-card uk-card-secondary uk-card-hover uk-grid-collapse uk-child-width-1-3@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="https://i.imgur.com/canzSwJ.png" alt="" uk-cover>
+                <canvas width="300" height="200"></canvas>
+            </div>
+            <div class="uk-width-2-3@s">
+                <div class="uk-card-body">
+                    <div class="uk-card-badge"><span uk-icon="link"></span></div>
+                    <h3 class="uk-card-title">
+                        API Tester
+                    </h3>
+                    <p>A RESTful API tester</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
+                    <a href="https://github.com/single9/docker-wildcard-letsencrypt" target="_blank" class="uk-link-reset">
+        <div class="uk-card uk-card-secondary uk-card-hover uk-grid-collapse uk-child-width-1-3@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="https://i.imgur.com/LZoIZyw.png" alt="" uk-cover>
+                <canvas width="300" height="200"></canvas>
+            </div>
+            <div class="uk-width-2-3@s">
+                <div class="uk-card-body">
+                    <div class="uk-card-badge"><span uk-icon="link"></span></div>
+                    <h3 class="uk-card-title">
+                        Docker Wildcard Certbot
+                    </h3>
+                    <p>Get Let&#39;s Encrypt wildcard SSL certificates validated by Cloudflare DNS API.</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
                     <a href="https://github.com/single9/s9-build-tool" target="_blank" class="uk-link-reset">
         <div class="uk-card uk-card-secondary uk-card-hover uk-grid-collapse uk-child-width-1-3@s uk-margin" uk-grid>
             <div class="uk-card-media-left uk-cover-container">
